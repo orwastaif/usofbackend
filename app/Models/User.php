@@ -7,7 +7,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class User extends Authenticatable implements JWTSubject
+class User extends Authenticatable  implements JWTSubject
 {
     use HasFactory, Notifiable;
 
@@ -55,4 +55,29 @@ class User extends Authenticatable implements JWTSubject
     {
         return [];
     }
+    public function comments()
+    {
+      return $this->hasMany('App\Comments', 'from_user');
+    }
+  
+    public function can_post()
+    {
+      $role = $this->role;
+      if ($role == 'author' || $role == 'admin') {
+        return true;
+      }
+      return false;
+    }
+  
+    public function is_admin()
+    {
+      $role = $this->role;
+      if ($role == 'admin') {
+        return true;
+      }
+      return false;
+    }
+
+
+
 }

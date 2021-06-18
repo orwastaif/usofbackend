@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInita599b3fd7372956baa1878e9afd2307d
+class ComposerStaticInit2b9898bb17e7bb1be587464f88dd11eb
 {
     public static $files = array (
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
@@ -127,6 +127,11 @@ class ComposerStaticInita599b3fd7372956baa1878e9afd2307d
             'Laravel\\Tinker\\' => 15,
             'Laravel\\Sail\\' => 13,
         ),
+        'J' => 
+        array (
+            'JeroenNoten\\LaravelAdminLte\\' => 28,
+            'Jenssegers\\Model\\' => 17,
+        ),
         'I' => 
         array (
             'Illuminate\\Support\\' => 19,
@@ -138,6 +143,7 @@ class ComposerStaticInita599b3fd7372956baa1878e9afd2307d
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
             'GrahamCampbell\\ResultType\\' => 26,
+            'GeneaLabs\\LaravelCaffeine\\' => 26,
         ),
         'F' => 
         array (
@@ -401,6 +407,14 @@ class ComposerStaticInita599b3fd7372956baa1878e9afd2307d
         array (
             0 => __DIR__ . '/..' . '/laravel/sail/src',
         ),
+        'JeroenNoten\\LaravelAdminLte\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src',
+        ),
+        'Jenssegers\\Model\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jenssegers/model/src',
+        ),
         'Illuminate\\Support\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Macroable',
@@ -425,6 +439,10 @@ class ComposerStaticInita599b3fd7372956baa1878e9afd2307d
         'GrahamCampbell\\ResultType\\' => 
         array (
             0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
+        ),
+        'GeneaLabs\\LaravelCaffeine\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/genealabs/laravel-caffeine/src',
         ),
         'Fruitcake\\Cors\\' => 
         array (
@@ -517,7 +535,14 @@ class ComposerStaticInita599b3fd7372956baa1878e9afd2307d
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/AuthController.php',
+        'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
+        'App\\Http\\Controllers\\CommentController' => __DIR__ . '/../..' . '/app/Http/Controllers/CommentController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\LikeController' => __DIR__ . '/../..' . '/app/Http/Controllers/LikeController.php',
+        'App\\Http\\Controllers\\PostController' => __DIR__ . '/../..' . '/app/Http/Controllers/PostController.php',
+        'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -527,7 +552,9 @@ class ComposerStaticInita599b3fd7372956baa1878e9afd2307d
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\Posts' => __DIR__ . '/../..' . '/app/Models/Posts.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Models\\like' => __DIR__ . '/../..' . '/app/Models/like.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -636,7 +663,22 @@ class ComposerStaticInita599b3fd7372956baa1878e9afd2307d
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
+        'Database\\Seeders\\CategoriesTableSeeder' => __DIR__ . '/../..' . '/database/seeders/CategoriesTableSeeder.php',
+        'Database\\Seeders\\DataRowsTableSeeder' => __DIR__ . '/../..' . '/database/seeders/DataRowsTableSeeder.php',
+        'Database\\Seeders\\DataTypesTableSeeder' => __DIR__ . '/../..' . '/database/seeders/DataTypesTableSeeder.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\MenuItemsTableSeeder' => __DIR__ . '/../..' . '/database/seeders/MenuItemsTableSeeder.php',
+        'Database\\Seeders\\MenusTableSeeder' => __DIR__ . '/../..' . '/database/seeders/MenusTableSeeder.php',
+        'Database\\Seeders\\PagesTableSeeder' => __DIR__ . '/../..' . '/database/seeders/PagesTableSeeder.php',
+        'Database\\Seeders\\PermissionRoleTableSeeder' => __DIR__ . '/../..' . '/database/seeders/PermissionRoleTableSeeder.php',
+        'Database\\Seeders\\PermissionsTableSeeder' => __DIR__ . '/../..' . '/database/seeders/PermissionsTableSeeder.php',
+        'Database\\Seeders\\PostsTableSeeder' => __DIR__ . '/../..' . '/database/seeders/PostsTableSeeder.php',
+        'Database\\Seeders\\RolesTableSeeder' => __DIR__ . '/../..' . '/database/seeders/RolesTableSeeder.php',
+        'Database\\Seeders\\SettingsTableSeeder' => __DIR__ . '/../..' . '/database/seeders/SettingsTableSeeder.php',
+        'Database\\Seeders\\TranslationsTableSeeder' => __DIR__ . '/../..' . '/database/seeders/TranslationsTableSeeder.php',
+        'Database\\Seeders\\UsersTableSeeder' => __DIR__ . '/../..' . '/database/seeders/UsersTableSeeder.php',
+        'Database\\Seeders\\VoyagerDatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/VoyagerDatabaseSeeder.php',
+        'Database\\Seeders\\VoyagerDummyDatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/VoyagerDummyDatabaseSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',
@@ -1424,6 +1466,11 @@ class ComposerStaticInita599b3fd7372956baa1878e9afd2307d
         'Fideloper\\Proxy\\TrustedProxyServiceProvider' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustedProxyServiceProvider.php',
         'Fruitcake\\Cors\\CorsServiceProvider' => __DIR__ . '/..' . '/fruitcake/laravel-cors/src/CorsServiceProvider.php',
         'Fruitcake\\Cors\\HandleCors' => __DIR__ . '/..' . '/fruitcake/laravel-cors/src/HandleCors.php',
+        'GeneaLabs\\LaravelCaffeine\\Console\\Commands\\Publish' => __DIR__ . '/..' . '/genealabs/laravel-caffeine/src/Console/Commands/Publish.php',
+        'GeneaLabs\\LaravelCaffeine\\Dripper' => __DIR__ . '/..' . '/genealabs/laravel-caffeine/src/Dripper.php',
+        'GeneaLabs\\LaravelCaffeine\\Http\\Controllers\\Drip' => __DIR__ . '/..' . '/genealabs/laravel-caffeine/src/Http/Controllers/Drip.php',
+        'GeneaLabs\\LaravelCaffeine\\Http\\Middleware\\LaravelCaffeineDripMiddleware' => __DIR__ . '/..' . '/genealabs/laravel-caffeine/src/Http/Middleware/LaravelCaffeineDripMiddleware.php',
+        'GeneaLabs\\LaravelCaffeine\\Providers\\Service' => __DIR__ . '/..' . '/genealabs/laravel-caffeine/src/Providers/Service.php',
         'GrahamCampbell\\ResultType\\Error' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Error.php',
         'GrahamCampbell\\ResultType\\Result' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Result.php',
         'GrahamCampbell\\ResultType\\Success' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Success.php',
@@ -2583,6 +2630,66 @@ class ComposerStaticInita599b3fd7372956baa1878e9afd2307d
         'Illuminate\\View\\ViewFinderInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewFinderInterface.php',
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
+        'Jenssegers\\Model\\MassAssignmentException' => __DIR__ . '/..' . '/jenssegers/model/src/MassAssignmentException.php',
+        'Jenssegers\\Model\\Model' => __DIR__ . '/..' . '/jenssegers/model/src/Model.php',
+        'JeroenNoten\\LaravelAdminLte\\AdminLte' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/AdminLte.php',
+        'JeroenNoten\\LaravelAdminLte\\AdminLteServiceProvider' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/AdminLteServiceProvider.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Form\\Button' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Form/Button.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Form\\DateRange' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Form/DateRange.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Form\\Input' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Form/Input.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Form\\InputColor' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Form/InputColor.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Form\\InputDate' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Form/InputDate.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Form\\InputFile' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Form/InputFile.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Form\\InputGroupComponent' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Form/InputGroupComponent.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Form\\InputSlider' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Form/InputSlider.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Form\\InputSwitch' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Form/InputSwitch.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Form\\Select' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Form/Select.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Form\\Select2' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Form/Select2.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Form\\SelectBs' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Form/SelectBs.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Form\\TextEditor' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Form/TextEditor.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Form\\Textarea' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Form/Textarea.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Layout\\NavbarNotification' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Layout/NavbarNotification.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Tool\\Datatable' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Tool/Datatable.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Tool\\Modal' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Tool/Modal.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Widget\\Alert' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Widget/Alert.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Widget\\Callout' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Widget/Callout.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Widget\\Card' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Widget/Card.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Widget\\InfoBox' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Widget/InfoBox.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Widget\\ProfileColItem' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Widget/ProfileColItem.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Widget\\ProfileRowItem' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Widget/ProfileRowItem.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Widget\\ProfileWidget' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Widget/ProfileWidget.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Widget\\Progress' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Widget/Progress.php',
+        'JeroenNoten\\LaravelAdminLte\\Components\\Widget\\SmallBox' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Components/Widget/SmallBox.php',
+        'JeroenNoten\\LaravelAdminLte\\Console\\AdminLteInstallCommand' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Console/AdminLteInstallCommand.php',
+        'JeroenNoten\\LaravelAdminLte\\Console\\AdminLtePluginCommand' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Console/AdminLtePluginCommand.php',
+        'JeroenNoten\\LaravelAdminLte\\Console\\AdminLteStatusCommand' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Console/AdminLteStatusCommand.php',
+        'JeroenNoten\\LaravelAdminLte\\Console\\AdminLteUpdateCommand' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Console/AdminLteUpdateCommand.php',
+        'JeroenNoten\\LaravelAdminLte\\Console\\PackageResources\\AssetsResource' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Console/PackageResources/AssetsResource.php',
+        'JeroenNoten\\LaravelAdminLte\\Console\\PackageResources\\AuthViewsResource' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Console/PackageResources/AuthViewsResource.php',
+        'JeroenNoten\\LaravelAdminLte\\Console\\PackageResources\\BasicRoutesResource' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Console/PackageResources/BasicRoutesResource.php',
+        'JeroenNoten\\LaravelAdminLte\\Console\\PackageResources\\BasicViewsResource' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Console/PackageResources/BasicViewsResource.php',
+        'JeroenNoten\\LaravelAdminLte\\Console\\PackageResources\\ConfigResource' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Console/PackageResources/ConfigResource.php',
+        'JeroenNoten\\LaravelAdminLte\\Console\\PackageResources\\MainViewsResource' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Console/PackageResources/MainViewsResource.php',
+        'JeroenNoten\\LaravelAdminLte\\Console\\PackageResources\\PackageResource' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Console/PackageResources/PackageResource.php',
+        'JeroenNoten\\LaravelAdminLte\\Console\\PackageResources\\PluginsResource' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Console/PackageResources/PluginsResource.php',
+        'JeroenNoten\\LaravelAdminLte\\Console\\PackageResources\\TranslationsResource' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Console/PackageResources/TranslationsResource.php',
+        'JeroenNoten\\LaravelAdminLte\\Events\\BuildingMenu' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Events/BuildingMenu.php',
+        'JeroenNoten\\LaravelAdminLte\\Helpers\\CommandHelper' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Helpers/CommandHelper.php',
+        'JeroenNoten\\LaravelAdminLte\\Helpers\\LayoutHelper' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Helpers/LayoutHelper.php',
+        'JeroenNoten\\LaravelAdminLte\\Helpers\\MenuItemHelper' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Helpers/MenuItemHelper.php',
+        'JeroenNoten\\LaravelAdminLte\\Helpers\\NavbarItemHelper' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Helpers/NavbarItemHelper.php',
+        'JeroenNoten\\LaravelAdminLte\\Helpers\\SidebarItemHelper' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Helpers/SidebarItemHelper.php',
+        'JeroenNoten\\LaravelAdminLte\\Http\\ViewComposers\\AdminLteComposer' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Http/ViewComposers/AdminLteComposer.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\ActiveChecker' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/ActiveChecker.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\Builder' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/Builder.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\Filters\\ActiveFilter' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/Filters/ActiveFilter.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\Filters\\ClassesFilter' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/Filters/ClassesFilter.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\Filters\\DataFilter' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/Filters/DataFilter.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\Filters\\FilterInterface' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/Filters/FilterInterface.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\Filters\\GateFilter' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/Filters/GateFilter.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\Filters\\HrefFilter' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/Filters/HrefFilter.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\Filters\\LangFilter' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/Filters/LangFilter.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\Filters\\SearchFilter' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/Filters/SearchFilter.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Laravel\\Sail\\Console\\InstallCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/InstallCommand.php',
         'Laravel\\Sail\\Console\\PublishCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/PublishCommand.php',
@@ -2606,18 +2713,16 @@ class ComposerStaticInita599b3fd7372956baa1878e9afd2307d
         'Lcobucci\\JWT\\Signer' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer.php',
         'Lcobucci\\JWT\\Signer\\BaseSigner' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/BaseSigner.php',
         'Lcobucci\\JWT\\Signer\\Ecdsa' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa.php',
-        'Lcobucci\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/MultibyteStringConverter.php',
+        'Lcobucci\\JWT\\Signer\\Ecdsa\\KeyParser' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/KeyParser.php',
         'Lcobucci\\JWT\\Signer\\Ecdsa\\Sha256' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/Sha256.php',
         'Lcobucci\\JWT\\Signer\\Ecdsa\\Sha384' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/Sha384.php',
         'Lcobucci\\JWT\\Signer\\Ecdsa\\Sha512' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/Sha512.php',
-        'Lcobucci\\JWT\\Signer\\Ecdsa\\SignatureConverter' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/SignatureConverter.php',
         'Lcobucci\\JWT\\Signer\\Hmac' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Hmac.php',
         'Lcobucci\\JWT\\Signer\\Hmac\\Sha256' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Hmac/Sha256.php',
         'Lcobucci\\JWT\\Signer\\Hmac\\Sha384' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Hmac/Sha384.php',
         'Lcobucci\\JWT\\Signer\\Hmac\\Sha512' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Hmac/Sha512.php',
         'Lcobucci\\JWT\\Signer\\Key' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Key.php',
         'Lcobucci\\JWT\\Signer\\Keychain' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Keychain.php',
-        'Lcobucci\\JWT\\Signer\\OpenSSL' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/OpenSSL.php',
         'Lcobucci\\JWT\\Signer\\Rsa' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Rsa.php',
         'Lcobucci\\JWT\\Signer\\Rsa\\Sha256' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Rsa/Sha256.php',
         'Lcobucci\\JWT\\Signer\\Rsa\\Sha384' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Rsa/Sha384.php',
@@ -4403,8 +4508,10 @@ class ComposerStaticInita599b3fd7372956baa1878e9afd2307d
         'SebastianBergmann\\Timer\\Timer' => __DIR__ . '/..' . '/phpunit/php-timer/src/Timer.php',
         'SebastianBergmann\\Type\\CallableType' => __DIR__ . '/..' . '/sebastian/type/src/CallableType.php',
         'SebastianBergmann\\Type\\Exception' => __DIR__ . '/..' . '/sebastian/type/src/exception/Exception.php',
+        'SebastianBergmann\\Type\\FalseType' => __DIR__ . '/..' . '/sebastian/type/src/FalseType.php',
         'SebastianBergmann\\Type\\GenericObjectType' => __DIR__ . '/..' . '/sebastian/type/src/GenericObjectType.php',
         'SebastianBergmann\\Type\\IterableType' => __DIR__ . '/..' . '/sebastian/type/src/IterableType.php',
+        'SebastianBergmann\\Type\\LogicException' => __DIR__ . '/..' . '/sebastian/type/src/exception/LogicException.php',
         'SebastianBergmann\\Type\\MixedType' => __DIR__ . '/..' . '/sebastian/type/src/MixedType.php',
         'SebastianBergmann\\Type\\NullType' => __DIR__ . '/..' . '/sebastian/type/src/NullType.php',
         'SebastianBergmann\\Type\\ObjectType' => __DIR__ . '/..' . '/sebastian/type/src/ObjectType.php',
@@ -5385,10 +5492,10 @@ class ComposerStaticInita599b3fd7372956baa1878e9afd2307d
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInita599b3fd7372956baa1878e9afd2307d::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInita599b3fd7372956baa1878e9afd2307d::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInita599b3fd7372956baa1878e9afd2307d::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInita599b3fd7372956baa1878e9afd2307d::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit2b9898bb17e7bb1be587464f88dd11eb::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit2b9898bb17e7bb1be587464f88dd11eb::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit2b9898bb17e7bb1be587464f88dd11eb::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit2b9898bb17e7bb1be587464f88dd11eb::$classMap;
 
         }, null, ClassLoader::class);
     }

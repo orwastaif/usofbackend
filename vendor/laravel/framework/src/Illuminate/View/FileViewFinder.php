@@ -134,7 +134,7 @@ class FileViewFinder implements ViewFinderInterface
             }
         }
 
-        throw new InvalidArgumentException("View [{$name}] not found.");
+     
     }
 
     /**
